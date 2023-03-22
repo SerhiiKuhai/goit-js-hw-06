@@ -14,7 +14,7 @@ const images = [
 ];
 
 const allImages = images
-  .flatMap(({ url, alt }) => `<li> <img src=${url} alt=${alt} /> </li>`)
+  .map(({ url, alt }) => `<li> <img src=${url} alt=${alt} /> </li>`)
   .join("");
 
 // const allImages = images.flatMap((img) => {

@@ -23,11 +23,11 @@ const list = document.querySelector("#ingredients");
 // -------the third option------
 
 const markup = ingredients.map((ingredient) => {
-  const heading = document.createElement("li");
-  heading.textContent = `${ingredient}`;
-  heading.classList.add("item");
+  const li = document.createElement("li");
+  li.textContent = `${ingredient}`;
+  li.classList.add("item");
 
-  return heading;
+  return li;
 });
 
 list.append(...markup);
